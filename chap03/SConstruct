@@ -1,9 +1,11 @@
 env = Environment(CCFLAGS='-std=c++17 -Wall -O3')
 
 targets = {}
-for i in range(23, 23+1):
+for i in range(23, 24+1):
     name = 'p%d' % i
     targets[name] = name + '.cc'
+
+targets['p23_a'] = 'p23_a.cc'
 
 for target in targets:
     objs = targets[target]
