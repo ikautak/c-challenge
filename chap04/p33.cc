@@ -91,7 +91,7 @@ int main() {
       {"explorer.exe", 7108,  Status::Running,   "marius.bancila", 29529,  Platform::_64bit},
       {"skype.exe",    22456, Status::Suspended, "marius.bancila", 656,    Platform::_64bit},
       {"asdf.exe",     356,   Status::Suspended, "marius.bancila", 656,    Platform::_64bit}
-                                 };
+  };
   // clang-format on
 
   print_process_info_list(list);
