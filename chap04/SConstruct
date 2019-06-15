@@ -1,7 +1,8 @@
 env = Environment(CCFLAGS='-std=c++17 -Wall -O3')
+env['LIBS'] = ['stdc++fs']
 
 targets = {}
-for i in range(32, 34+1):
+for i in range(32, 35+1):
     name = 'p%d' % i
     targets[name] = name + '.cc'
 
