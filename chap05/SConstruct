@@ -1,0 +1,11 @@
+env = Environment(CCFLAGS='-std=c++17 -Wall -O3')
+#env['LIBS'] = ['stdc++fs']
+
+targets = {}
+for i in range(39, 44+1):
+    name = 'p%d' % i
+    targets[name] = name + '.cc'
+
+for target in targets:
+    objs = targets[target]
+    env.Program(target, objs)
