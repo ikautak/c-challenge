@@ -1,8 +1,8 @@
 env = Environment(CCFLAGS='-std=c++17 -Wall -O3')
-#env['LIBS'] = ['stdc++fs']
+env['LIBS'] = ['pthread']
 
 targets = {}
-for i in range(45, 51+1):
+for i in range(45, 60+1):
     name = 'p%d' % i
     targets[name] = name + '.cc'
 
