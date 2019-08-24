@@ -6,6 +6,8 @@ for i in range(61, 66+1):
     name = 'p%d' % i
     targets[name] = name + '.cc'
 
+targets['p61_2'] = 'p61_2.cc'
+
 for target in targets:
     objs = targets[target]
     env.Program(target, objs)
