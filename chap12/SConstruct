@@ -1,7 +1,9 @@
 env = Environment(CCFLAGS='-std=c++17 -Wall -O3')
+env['CPPPATH'] = ['./asio/include']
+env['LIBS'] = ['pthread']
 
 targets = {}
-for i in range(95, 95+1):
+for i in range(95, 96+1):
     name = 'p%d' % i
     targets[name] = name + '.cc'
 
